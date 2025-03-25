@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "e3ffa783-81af-49ae-8254-21eed35dbc9d")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Barrel_Jack_Switch"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -83,10 +85,10 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -3.302 3.175)
-					(mid -3.9343 2.54)
-					(end -3.302 1.905)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -96,9 +98,21 @@
 					)
 				)
 				(arc
-					(start -3.302 3.175)
+					(start -3.302 1.905)
 					(mid -3.9343 2.54)
-					(end -3.302 1.905)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -117,6 +131,17 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
+					(end -3.302 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
@@ -143,29 +168,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
 			(symbol "Barrel_Jack_Switch_1_1"
 				(pin passive line
@@ -179,24 +181,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -222,12 +206,35 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_Coaxial_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -319,9 +326,9 @@
 			)
 			(symbol "Conn_Coaxial_Small_1_1"
 				(arc
-					(start -1.1916 -0.6311)
-					(mid 0.327 -1.3081)
-					(end 1.3484 0.0039)
+					(start 1.3484 0.0039)
+					(mid 0.327 -1.308)
+					(end -1.1916 -0.6311)
 					(stroke
 						(width 0.3048)
 						(type default)
@@ -331,9 +338,9 @@
 					)
 				)
 				(arc
-					(start 1.3484 -0.0039)
+					(start -1.1916 0.6311)
 					(mid 0.327 1.3081)
-					(end -1.1916 0.6311)
+					(end 1.3484 -0.0039)
 					(stroke
 						(width 0.3048)
 						(type default)
@@ -379,12 +386,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -475,17 +487,14 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
-		(at 76.2 55.88)
+		(at 76.2 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f0502c57-20a5-4961-8946-3d7cf5b4b57e")
-	)
-	(no_connect
-		(at -63.5 22.86)
-		(uuid "59b5f985-b101-4b7b-be35-01e826b2f95c")
+		(uuid "38944501-0729-4045-aa30-2e336048aad9")
 	)
 	(wire
 		(pts
@@ -499,6 +508,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 54.61) (xy 127 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "236c5763-269b-4e0e-9926-307f9171f61a")
+	)
+	(wire
+		(pts
 			(xy 76.2 50.8) (xy 127 50.8)
 		)
 		(stroke
@@ -509,13 +528,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 53.34) (xy 76.2 55.88)
+			(xy 165.1 132.08) (xy 187.96 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a4f953dc-1764-4888-b91c-9233c90a5113")
+		(uuid "7c2fe8de-1d80-4f47-883a-37bbd09b63d4")
 	)
 	(wire
 		(pts
@@ -539,16 +558,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 55.88) (xy 76.2 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8542a8d-5e58-431a-97b6-6864120fe815")
-	)
-	(wire
-		(pts
 			(xy 165.1 127) (xy 187.96 127)
 		)
 		(stroke
@@ -567,71 +576,25 @@
 		)
 		(uuid "d80aed43-b865-48cc-ad0d-364b35967f47")
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1564e570-fb20-41c5-9122-4399d2124ab6")
-		(property "Reference" "#PWR025"
-			(at 76.2 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 76.2 54.61)
 		)
-		(property "Value" "GND"
-			(at 76.2 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Footprint" ""
-			(at 76.2 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(uuid "f0c9aff1-c49f-4d77-a70c-668a5e6efd51")
+	)
+	(wire
+		(pts
+			(xy 76.2 54.61) (xy 76.2 55.88)
 		)
-		(property "Datasheet" ""
-			(at 76.2 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3f31d0d9-26a0-41b4-a632-def3926ff8f1")
-		)
-		(instances
-			(project "SI5351_broadband_comb_generatror"
-				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "f4f169ef-1d7b-4bdb-b7d6-ba03f486cbbc")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -974,9 +937,147 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4c91d2a-9c3d-42cb-ac54-842c92337965")
+		(property "Reference" "#PWR064"
+			(at 199.39 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7bcf928a-d9ce-48cd-b094-235f9b35bf7e")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial_Small")
+		(at 190.5 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc22aeeb-b10f-472f-b7d5-d71fe8dfc9f0")
+		(property "Reference" "J9"
+			(at 190.5 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_Coaxial_Small"
+			(at 190.5 135.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 190.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5b980b3-593a-43ab-8d56-26473b46d8c6")
+		)
+		(pin "2"
+			(uuid "dfe25c15-1261-436f-a2f2-a5d463ac850f")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
 		(at 127 38.1)
 		(size 38.1 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1004,15 +1105,25 @@
 				(justify left top)
 			)
 		)
-		(pin "VIN" passive
+		(pin "VIN+" passive
 			(at 127 50.8 180)
+			(uuid "cf74b48d-2112-49d5-be47-72839a453e9e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e7a9e87f-73e1-46d2-98e2-967e5f093326")
+		)
+		(pin "VIN-" passive
+			(at 127 54.61 180)
+			(uuid "b8868a74-c7f3-4f89-990f-454dde5cc6e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(instances
 			(project "SI5351_broadband_comb_generatror"
@@ -1025,6 +1136,10 @@
 	(sheet
 		(at 127 114.3)
 		(size 38.1 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1054,53 +1169,63 @@
 		)
 		(pin "10MHz_IN" input
 			(at 127 127 180)
+			(uuid "0406e75d-e3c5-43a8-a6c3-fada38842b6c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0406e75d-e3c5-43a8-a6c3-fada38842b6c")
 		)
 		(pin "INTR" output
 			(at 161.29 114.3 90)
+			(uuid "786b8ccd-d5df-42e5-bda9-8ac9ca2a6a32")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "786b8ccd-d5df-42e5-bda9-8ac9ca2a6a32")
 		)
 		(pin "SDA" bidirectional
 			(at 158.75 114.3 90)
+			(uuid "80cc347a-1aa3-46e9-ac56-3347b9a3ba56")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "80cc347a-1aa3-46e9-ac56-3347b9a3ba56")
 		)
 		(pin "SCL" input
 			(at 156.21 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
 			(uuid "910047a6-01c7-4db5-b738-1b0a08f62aa5")
-		)
-		(pin "comb_out" output
-			(at 165.1 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "986f7971-ee11-4473-9264-a34e03f66dbe")
+		)
+		(pin "comb_out_1" output
+			(at 165.1 127 0)
+			(uuid "36e171bf-b5d6-4c88-9710-182c743e5d0b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "comb_out_2" output
+			(at 165.1 132.08 0)
+			(uuid "c253bb88-1407-4853-a0ac-1b2a83579ea0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
 		(instances
 			(project "SI5351_broadband_comb_generatror"
@@ -1113,6 +1238,10 @@
 	(sheet
 		(at 127 76.2)
 		(size 38.1 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1142,33 +1271,33 @@
 		)
 		(pin "SCL_3" output
 			(at 156.21 101.6 270)
+			(uuid "5235d75a-5e71-40cb-aabc-7a1c7ae15ec9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5235d75a-5e71-40cb-aabc-7a1c7ae15ec9")
 		)
 		(pin "SDA_3" bidirectional
 			(at 158.75 101.6 270)
+			(uuid "01ea3a3a-8930-489c-a158-e3ee0c1826b7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "01ea3a3a-8930-489c-a158-e3ee0c1826b7")
 		)
 		(pin "INT_3" input
 			(at 161.29 101.6 270)
+			(uuid "4afabc45-2b83-48d9-9b1e-48ff60c36dd2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4afabc45-2b83-48d9-9b1e-48ff60c36dd2")
 		)
 		(instances
 			(project "SI5351_broadband_comb_generatror"
@@ -1183,4 +1312,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
