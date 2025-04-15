@@ -1507,212 +1507,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Oscillator:KT2520K-T"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -4.064 6.096 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "KT2520K-T"
-				(at 4.318 6.096 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Oscillator:Oscillator_SMD_Kyocera_2520-6Pin_2.5x2.0mm"
-				(at -2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://global.kyocera.com/prdct/electro/product/pdf/kt2520_e.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "10-60MHz Temperature Compensated Crystal Oscillator, Kyocera 2520"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "tcxo"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Oscillator*SMD*Kyocera*2.5x2.0mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "KT2520K-T_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.572 -0.508) (xy -3.81 -0.508) (xy -3.81 0.762) (xy -3.048 0.762) (xy -3.048 -0.508) (xy -2.286 -0.508)
-						(xy -2.286 0.762) (xy -1.524 0.762) (xy -1.524 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "KT2520K-T_1_1"
-				(pin no_connect line
-					(at -5.08 2.54 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Oscillator:Si5351C-B-GM"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2161,6 +1955,176 @@
 						)
 					)
 					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Oscillator:TG2520SMN-xx.xxxxxxMhz-xxxxNM"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Y"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TG2520SMN-xx.xxxxxxMhz-xxxxNM"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_TG2520SMN-xxx-xxxxxx-4Pin_2.5x2.0mm"
+				(at 11.43 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=app_TG2520SMN&lang=en"
+				(at -2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Crystal Oscillator Low Profile / High Stability TCXO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Crystal Clock Oscillator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Oscillator*SMD*SeikoEpson*TG2520*2.5x2.0mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TG2520SMN-xx.xxxxxxMhz-xxxxNM_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -0.635) (xy -1.27 -0.635) (xy -1.27 0.635) (xy -0.635 0.635) (xy -0.635 -0.635) (xy 0 -0.635)
+						(xy 0 0.635) (xy 0.635 0.635) (xy 0.635 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TG2520SMN-xx.xxxxxxMhz-xxxxNM_1_1"
+				(pin no_connect line
+					(at -5.08 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "Vcc"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4412,6 +4376,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 133.35 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
+			(at 133.35 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 133.35 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "KAM21KR71E225KU"
+			(at 133.35 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dd7e81b9-fe72-4f63-9e08-5e835044042b")
 		)
@@ -4478,6 +4474,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 167.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -4683,6 +4711,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 96.52 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ec6c791f-8cc4-4f49-b2f3-c6c46b499f36")
 		)
@@ -4821,6 +4881,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 191.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 191.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 191.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 191.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "38047e74-48fc-4053-b42e-05f8e9a5b034")
 		)
@@ -4957,6 +5049,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 49.53 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 49.53 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 49.53 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 49.53 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "92c09cf9-ec8a-40e4-88e6-c3d4e59191b1")
 		)
@@ -5033,6 +5157,81 @@
 			(project ""
 				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Oscillator:TG2520SMN-xx.xxxxxxMhz-xxxxNM")
+		(at 74.93 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19b940df-ab42-4154-bd36-864fc57beb15")
+		(property "Reference" "Y2"
+			(at 68.58 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TG2520SMN-xx.xxxxxxMhz-xxxxNM"
+			(at 91.44 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Oscillator:Oscillator_SMD_SeikoEpson_TG2520SMN-xxx-xxxxxx-4Pin_2.5x2.0mm"
+			(at 86.36 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=app_TG2520SMN&lang=en"
+			(at 72.39 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal Oscillator Low Profile / High Stability TCXO"
+			(at 74.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0f0e805b-15e9-4dce-bee4-004269b97f6d")
+		)
+		(pin "4"
+			(uuid "3b4a78ba-17a8-4b34-b196-4dc8e2b98401")
+		)
+		(pin "1"
+			(uuid "b8d83a7e-da5d-4736-b9ce-4d73aed7457b")
+		)
+		(pin "3"
+			(uuid "262b6413-7bd3-4862-906d-93cec071a63d")
+		)
+		(instances
+			(project ""
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
+					(reference "Y2")
 					(unit 1)
 				)
 			)
@@ -5286,6 +5485,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 214.63 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 214.63 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 214.63 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 214.63 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e9045162-cbc1-433f-b8d9-760c51df9676")
 		)
@@ -5356,6 +5587,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 49.53 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b09d78a2-7996-4096-8d9b-209d5673d538")
 		)
@@ -5398,7 +5661,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal"
+		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical"
 			(at 209.55 118.11 0)
 			(effects
 				(font
@@ -5836,6 +6099,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 87.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
+			(at 87.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 87.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "KAM21KR71E225KU"
+			(at 87.63 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -6321,7 +6616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "3670473 "
 			(at 88.9 157.48 0)
 			(effects
 				(font
@@ -6330,7 +6625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Wurth Elektronik"
 			(at 88.9 157.48 0)
 			(effects
 				(font
@@ -6339,7 +6634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 88.9 157.48 0)
 			(effects
 				(font
@@ -6348,7 +6643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 710-3670473 "
 			(at 88.9 157.48 0)
 			(effects
 				(font
@@ -6528,7 +6823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "KAM21KR71E225KU"
 			(at 228.6 135.89 0)
 			(effects
 				(font
@@ -6537,7 +6832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "KYOCERA AVX "
 			(at 228.6 135.89 0)
 			(effects
 				(font
@@ -6546,7 +6841,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 228.6 135.89 0)
 			(effects
 				(font
@@ -6555,7 +6850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
 			(at 228.6 135.89 0)
 			(effects
 				(font
@@ -6702,6 +6997,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 142.24 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 142.24 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 142.24 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 142.24 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b6337160-c5a6-42e8-88e9-cd350e9863ac")
 		)
@@ -6770,7 +7097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "KAM21KR71E225KU"
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -6779,7 +7106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "KYOCERA AVX "
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -6788,7 +7115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -6797,7 +7124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -7075,7 +7402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "KAM21KR71E225KU"
 			(at 181.61 76.2 0)
 			(effects
 				(font
@@ -7084,7 +7411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "KYOCERA AVX "
 			(at 181.61 76.2 0)
 			(effects
 				(font
@@ -7093,7 +7420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 181.61 76.2 0)
 			(effects
 				(font
@@ -7102,7 +7429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
 			(at 181.61 76.2 0)
 			(effects
 				(font
@@ -7417,6 +7744,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 200.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8196,6 +8555,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 167.64 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 167.64 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 167.64 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 167.64 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2972779a-30c2-4d58-aba8-ad633479d446")
 		)
@@ -8266,6 +8657,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 220.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
+			(at 220.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 220.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "KAM21KR71E225KU"
+			(at 220.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b369adba-2180-4c33-8e71-4fa89463d1cd")
 		)
@@ -8334,7 +8757,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "KAM21KR71E225KU"
 			(at 157.48 135.89 0)
 			(effects
 				(font
@@ -8343,7 +8766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "KYOCERA AVX "
 			(at 157.48 135.89 0)
 			(effects
 				(font
@@ -8352,7 +8775,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 157.48 135.89 0)
 			(effects
 				(font
@@ -8361,7 +8784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
 			(at 157.48 135.89 0)
 			(effects
 				(font
@@ -8503,7 +8926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "KAM21KR71E225KU"
 			(at 181.61 135.89 0)
 			(effects
 				(font
@@ -8512,7 +8935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "KYOCERA AVX "
 			(at 181.61 135.89 0)
 			(effects
 				(font
@@ -8521,7 +8944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 181.61 135.89 0)
 			(effects
 				(font
@@ -8530,7 +8953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
 			(at 181.61 135.89 0)
 			(effects
 				(font
@@ -8581,7 +9004,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal"
+		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_TC33X_Vertical"
 			(at 209.55 58.42 0)
 			(effects
 				(font
@@ -9096,6 +9519,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 229.87 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 229.87 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 229.87 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 229.87 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "34ca5aa0-9c76-40b4-a91d-d35910b6de12")
 		)
@@ -9362,6 +9817,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 214.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 214.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 214.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 214.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -10283,7 +10770,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "3670473 "
 			(at 49.53 157.48 0)
 			(effects
 				(font
@@ -10292,7 +10779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Wurth Elektronik"
 			(at 49.53 157.48 0)
 			(effects
 				(font
@@ -10301,7 +10788,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 49.53 157.48 0)
 			(effects
 				(font
@@ -10310,7 +10797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 710-3670473 "
 			(at 49.53 157.48 0)
 			(effects
 				(font
@@ -10610,88 +11097,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Oscillator:KT2520K-T")
-		(at 74.93 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0e2e3d1-e0a9-4f2c-baee-7939d2be231e")
-		(property "Reference" "U4"
-			(at 68.58 57.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "KT2520K-T"
-			(at 68.58 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_Kyocera_2520-6Pin_2.5x2.0mm"
-			(at 72.39 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://global.kyocera.com/prdct/electro/product/pdf/kt2520_e.pdf"
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10-60MHz Temperature Compensated Crystal Oscillator, Kyocera 2520"
-			(at 74.93 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "b3cda657-4527-46b1-9761-66492dce9981")
-		)
-		(pin "1"
-			(uuid "66eec927-dbf8-4765-84ab-06ff6031bfe1")
-		)
-		(pin "4"
-			(uuid "415b200c-c03d-4428-9760-c399a264f87e")
-		)
-		(pin "2"
-			(uuid "9316ded3-ba63-44dd-9ba7-fdcd1a9f4ced")
-		)
-		(pin "5"
-			(uuid "b2380f51-923b-46a9-867d-b46e35e34962")
-		)
-		(pin "3"
-			(uuid "d470b5c7-6f41-4f3d-b93b-c81bff351145")
-		)
-		(instances
-			(project "SI5351_broadband_comb_generatror"
-				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 200.66 63.5 0)
 		(unit 1)
@@ -10810,7 +11215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "KAM21KR71E225KU"
 			(at 228.6 76.2 0)
 			(effects
 				(font
@@ -10819,7 +11224,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "KYOCERA AVX "
 			(at 228.6 76.2 0)
 			(effects
 				(font
@@ -10828,7 +11233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 228.6 76.2 0)
 			(effects
 				(font
@@ -10837,7 +11242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
 			(at 228.6 76.2 0)
 			(effects
 				(font
@@ -11152,6 +11557,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 229.87 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 229.87 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 229.87 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 229.87 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d33e5a6f-9228-4907-bf8d-6a6934e2df74")
 		)
@@ -11288,6 +11725,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 200.66 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 200.66 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 200.66 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 200.66 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d2c1809f-2034-4840-a6a9-ce3deb0dc238")
 		)
@@ -11422,6 +11891,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 220.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21KR71E225KU "
+			(at 220.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 220.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "KAM21KR71E225KU"
+			(at 220.98 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -11761,6 +12262,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 193.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 581-KAM21BR71H104JT "
+			(at 193.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX "
+			(at 193.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "\nKAM21BR71H104JT"
+			(at 193.04 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
