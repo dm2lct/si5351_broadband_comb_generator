@@ -5330,10 +5330,6 @@
 		(uuid "fc527b01-20a0-44d4-8e6f-4f395da890a1")
 	)
 	(no_connect
-		(at 118.11 93.98)
-		(uuid "06ac6e36-9f22-4ab0-acd8-8e95cd7255c6")
-	)
-	(no_connect
 		(at 118.11 99.06)
 		(uuid "16d2d5f4-2325-4108-bd4d-2dc24f50b62c")
 	)
@@ -5400,10 +5396,6 @@
 	(no_connect
 		(at 77.47 93.98)
 		(uuid "e0df6757-0824-4aac-9ce3-75cc5e1678d1")
-	)
-	(no_connect
-		(at 118.11 91.44)
-		(uuid "e36b74fb-98fd-43bb-a5a4-e8985e23eb63")
 	)
 	(no_connect
 		(at 163.83 135.89)
@@ -5745,6 +5737,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 93.98) (xy 123.19 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b51ee56-5789-4ffc-8b03-75a81f4ba8c2")
+	)
+	(wire
+		(pts
 			(xy 194.31 92.71) (xy 228.6 92.71)
 		)
 		(stroke
@@ -5982,6 +5984,16 @@
 			(type default)
 		)
 		(uuid "846bdb58-1833-4df9-b3e6-b62598b6b700")
+	)
+	(wire
+		(pts
+			(xy 125.73 91.44) (xy 123.19 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85bbccf7-b24e-4eb4-912b-328651f5ae4c")
 	)
 	(wire
 		(pts
@@ -7904,7 +7916,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "364b0032-ea9b-4234-9b9b-6883c2f345e1")
 		(property "Reference" "C37"
 			(at 81.28 35.5537 90)
@@ -7991,6 +8002,106 @@
 			(project "SI5351_broadband_comb_generatror"
 				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
 					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 128.27 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36e39b5c-a8c5-4746-acf0-32b3e64afa7a")
+		(property "Reference" "D7"
+			(at 128.2065 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_Small"
+			(at 128.2065 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 128.27 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 859-LTST-C171KGKT "
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LITEON "
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "LTST-C171KGKT"
+			(at 128.27 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "169748e5-6132-48df-ab98-63d5d78fcfe9")
+		)
+		(pin "2"
+			(uuid "f9849421-7bac-4d16-a4c2-a74c54a9d489")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -8441,6 +8552,73 @@
 			(project "SI5351_broadband_comb_generatror"
 				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4450476f-d025-40af-ab06-7e516a165920")
+		(property "Reference" "#PWR098"
+			(at 137.16 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 93.9801 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34947187-9c2b-4957-9d03-62f592c887a6")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -9027,7 +9205,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5e1d048a-3813-47e3-a57b-99284edf1412")
 		(property "Reference" "C38"
 			(at 91.44 35.5537 90)
@@ -10193,6 +10370,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 120.65 91.44 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9029b099-c00c-48f3-8e4d-24a7b335b1b6")
+		(property "Reference" "R11"
+			(at 120.65 89.408 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 120.65 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer PN" ""
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" ""
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor PN" ""
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96d836e1-1c99-4c85-ae1d-314cd476edac")
+		)
+		(pin "2"
+			(uuid "46d24bf1-e3cc-437b-8554-48c8edbeaae6")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
 		(at 245.11 138.43 0)
 		(unit 1)
@@ -10911,6 +11191,173 @@
 			(project "SI5351_broadband_comb_generatror"
 				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
 					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_Small")
+		(at 128.27 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba6266c0-3f04-4642-8307-a90be9f5f282")
+		(property "Reference" "D5"
+			(at 128.2065 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_Small"
+			(at 128.2065 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 128.27 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, small symbol"
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 859-LTST-C171KGKT "
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LITEON "
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "LTST-C171KGKT"
+			(at 128.27 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "407543b6-a25b-45db-9cb9-905f4519d78a")
+		)
+		(pin "2"
+			(uuid "35fb9e82-56fc-4be0-bcfa-6477a44b357f")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf1595ce-06a8-4c9c-bd65-069dbeb96316")
+		(property "Reference" "#PWR097"
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 91.4401 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "474dd7d8-3173-4494-b488-0926e749e8c4")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -11846,7 +12293,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dce5a642-9103-40e1-a9bd-30e6779037ae")
 		(property "Reference" "D6"
 			(at 59.69 53.3399 90)
@@ -11902,7 +12348,7 @@
 			)
 		)
 		(property "Distributor PN" " 576-SMAJ5.0CA "
-			(at 57.15 54.61 0)
+			(at 52.832 75.946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12629,6 +13075,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 120.65 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f58cb132-93b9-4b06-9a58-9c6fbc20803b")
+		(property "Reference" "R16"
+			(at 120.65 91.948 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 120.65 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 120.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 120.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer PN" ""
+			(at 120.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 120.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" ""
+			(at 120.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor PN" ""
+			(at 120.65 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "796f6322-0c92-48a5-b287-a1bb0ae96f9d")
+		)
+		(pin "2"
+			(uuid "cd5a4f10-d84e-4465-be27-6843c691a1d2")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/df4b691e-dedb-4cfe-b636-3422c4daad10"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 50.8 53.34 180)
 		(unit 1)
@@ -12636,7 +13185,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f92a638e-436a-429d-9ed3-0467e11bf9bd")
 		(property "Reference" "C46"
 			(at 44.45 53.3337 90)
@@ -12682,7 +13230,7 @@
 			)
 		)
 		(property "Distributor" "Mouser"
-			(at 50.8 53.34 0)
+			(at 29.718 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12690,7 +13238,7 @@
 			)
 		)
 		(property "Distributor PN" " 581-KAM21KR71E225KU "
-			(at 50.8 53.34 0)
+			(at 35.814 57.658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12698,7 +13246,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX "
-			(at 50.8 53.34 0)
+			(at 32.766 61.722 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12706,7 +13254,7 @@
 			)
 		)
 		(property "Manufacturer PN" "KAM21KR71E225KU"
-			(at 50.8 53.34 0)
+			(at 34.29 55.372 0)
 			(effects
 				(font
 					(size 1.27 1.27)
