@@ -1811,7 +1811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Symbol:OSHW-Logo_7.5x8mm_SilkScreen"
+		(property "Footprint" "Symbol:OSHW-Logo_7.5x8mm_SolderMask"
 			(at 186.69 173.99 0)
 			(effects
 				(font
@@ -1830,15 +1830,6 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, small"
-			(at 186.69 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 186.69 173.99 0)
 			(effects
 				(font
