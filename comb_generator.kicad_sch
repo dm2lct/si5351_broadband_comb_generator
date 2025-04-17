@@ -1511,7 +1511,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "Y"
 				(at -12.7 21.59 0)
 				(effects
 					(font
@@ -4231,6 +4231,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 74.93 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" "968-ISL3280EIHZ-T "
+			(at 74.93 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Renesas / Intersil "
+			(at 74.93 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "ISL3280EIHZ-T "
+			(at 74.93 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "ddf0e57c-08d0-4b8f-bfda-7007359a1212")
 		)
@@ -5216,6 +5248,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 74.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 732-TG252S25MCGNNM3 "
+			(at 74.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Epson"
+			(at 74.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "TG2520SMN 25.000M-MCGNNM3"
+			(at 74.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0f0e805b-15e9-4dce-bee4-004269b97f6d")
 		)
@@ -5290,6 +5354,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 115.57 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 634-SI5351C-B-GM "
+			(at 115.57 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Skyworks Solutions, Inc. "
+			(at 115.57 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "SI5351C-B-GM"
+			(at 115.57 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "9"
@@ -5688,7 +5784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "TC33X-2-103E"
 			(at 209.55 118.11 0)
 			(effects
 				(font
@@ -5697,7 +5793,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Bourns "
 			(at 209.55 118.11 0)
 			(effects
 				(font
@@ -5706,7 +5802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 209.55 118.11 0)
 			(effects
 				(font
@@ -5715,7 +5811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 652-TC33X-2-103E "
 			(at 209.55 118.11 0)
 			(effects
 				(font
@@ -6210,7 +6306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Mini-Circuits"
 			(at 170.18 76.2 0)
 			(effects
 				(font
@@ -7982,6 +8078,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 754-PAT1220C-3DBT5 "
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Susumu "
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "PAT1220-C-3DB-T5"
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "80bbdb1f-3069-4d3d-820c-30400c9268df")
 		)
@@ -9031,7 +9159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "TC33X-2-103E"
 			(at 209.55 58.42 0)
 			(effects
 				(font
@@ -9040,7 +9168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Bourns "
 			(at 209.55 58.42 0)
 			(effects
 				(font
@@ -9049,7 +9177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 209.55 58.42 0)
 			(effects
 				(font
@@ -9058,7 +9186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 652-TC33X-2-103E "
 			(at 209.55 58.42 0)
 			(effects
 				(font
@@ -9419,7 +9547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Mini-Circuits"
 			(at 170.18 135.89 0)
 			(effects
 				(font
@@ -11991,6 +12119,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 754-PAT1220C-3DBT5 "
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Susumu "
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "PAT1220-C-3DB-T5"
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

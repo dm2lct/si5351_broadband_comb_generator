@@ -1870,6 +1870,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pin" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode light-emitting-diode"
 				(at 0 0 0)
 				(effects
@@ -7301,6 +7310,14 @@
 				)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 21.59 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c3d86b11-4845-4045-802d-efb7c4af9aae")
 		)
@@ -7710,6 +7727,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 57.15 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" "710-82400102"
+			(at 57.15 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 57.15 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "82400102"
+			(at 57.15 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "5"
@@ -8266,7 +8315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "ECS-2520MVLC-080-BN-TR3 "
 			(at 250.19 106.68 0)
 			(effects
 				(font
@@ -8275,7 +8324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "ECS"
 			(at 250.19 106.68 0)
 			(effects
 				(font
@@ -8284,7 +8333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 250.19 106.68 0)
 			(effects
 				(font
@@ -8293,7 +8342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" " 520-2520MVLC080BNTR3 "
 			(at 250.19 106.68 0)
 			(effects
 				(font
@@ -9585,6 +9634,38 @@
 				(hide yes)
 			)
 		)
+		(property "Distributor" "Mouser"
+			(at 97.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 895-FT232RNL-TUBE "
+			(at 97.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FTDI"
+			(at 97.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "FT232RNL-TUBE"
+			(at 97.79 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "21"
 			(uuid "5a1ad712-3973-4811-a5ed-7c9ae5db60f8")
 		)
@@ -10195,6 +10276,38 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Distributor" "Mouser"
+			(at 179.07 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Distributor PN" " 556-ATMEGA328PB-ANR"
+			(at 179.07 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology "
+			(at 179.07 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer PN" "ATMEGA328PB-ANR"
+			(at 179.07 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "5"
@@ -12222,7 +12335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "PH1RB-06-UA"
 			(at 246.38 138.43 0)
 			(effects
 				(font
@@ -12231,7 +12344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Adam Tech "
 			(at 246.38 138.43 0)
 			(effects
 				(font
@@ -12240,7 +12353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 246.38 138.43 0)
 			(effects
 				(font
@@ -12249,7 +12362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" "TC33X-2-103E"
 			(at 246.38 138.43 0)
 			(effects
 				(font
@@ -12439,7 +12552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer PN" ""
+		(property "Manufacturer PN" "NR01105ANG13-2A"
 			(at 267.97 140.97 0)
 			(effects
 				(font
@@ -12448,7 +12561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "NKK Switches"
 			(at 267.97 140.97 0)
 			(effects
 				(font
@@ -12457,7 +12570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor" ""
+		(property "Distributor" "Mouser"
 			(at 267.97 140.97 0)
 			(effects
 				(font
@@ -12466,7 +12579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distributor PN" ""
+		(property "Distributor PN" "633-NR01105ANG13-2A"
 			(at 267.97 140.97 0)
 			(effects
 				(font

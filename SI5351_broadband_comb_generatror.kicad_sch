@@ -1749,7 +1749,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Würth Elektronik"
+		(property "Manufacturer" "Wurth Elektronik"
 			(at 68.58 53.34 0)
 			(effects
 				(font
