@@ -1953,7 +1953,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "\nROHM Semiconductor "
+		(property "Manufacturer" "ROHM Semiconductor "
 			(at 124.46 86.36 0)
 			(effects
 				(font

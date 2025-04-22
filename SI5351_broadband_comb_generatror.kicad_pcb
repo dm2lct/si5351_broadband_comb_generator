@@ -13,6 +13,7 @@
 		(rev "1.0")
 		(company "Professur für TET und EMV, TU Dresden")
 		(comment 1 "DM2LCT")
+		(comment 4 "AISLER Project ID: DJNLCBPW")
 	)
 	(layers
 		(0 "F.Cu" signal)
