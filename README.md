@@ -3,7 +3,7 @@
 # A tightrope walk between cost efficiency and RF-performance...
 
 
-![3D-Picture of the comb-generator PCB in KiCAD](/assets/images/SI5351_broadband_comb_generatror.png)
+![3D-Picture of the comb-generator PCB in KiCAD](SI5351_broadband_comb_generatror.png)
 
 
 
