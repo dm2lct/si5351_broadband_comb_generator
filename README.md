@@ -2,6 +2,11 @@
 
 # A tightrope walk between cost efficiency and RF-performance...
 
+
+![3D-Picture of the comb-generator PCB in KiCAD](/assets/images/SI5351_broadband_comb_generatror.png)
+
+
+
 ## Specs
 
 The idea was, to build a programmable comb generator for RF and EMC measurements to validate some measurement gear like EMC receivers and to act as a reference source for some EMC measurement environments. 
