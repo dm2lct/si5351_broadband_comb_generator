@@ -2135,7 +2135,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RF:PAT1220-C-3DB"
+		(symbol "RF:GAT-10"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2147,7 +2147,7 @@
 					)
 				)
 			)
-			(property "Value" "PAT1220-C-3DB"
+			(property "Value" "GAT-10+"
 				(at 5.08 6.35 0)
 				(effects
 					(font
@@ -2155,7 +2155,7 @@
 					)
 				)
 			)
-			(property "Footprint" "RF_Converter:RF_Attenuator_Susumu_PAT1220"
+			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits FG873"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2164,7 +2164,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition16_en.pdf"
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/GAT-10+.pdf"
 				(at -6.35 6.35 0)
 				(effects
 					(font
@@ -2173,7 +2173,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "10GHz RF Attenuator, 50ohm Matched Impedance, 3dB Attenuation, PAT1220"
+			(property "Description" "8GHz RF Attenuator, 50ohm Matched Impedance, 10dB Attenuation, GAT-10"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2200,7 +2200,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "PAT1220-C-3DB_0_1"
+			(symbol "GAT-10_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -5.08)
@@ -2272,26 +2272,8 @@
 						(type none)
 					)
 				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
-			(symbol "PAT1220-C-3DB_1_1"
+			(symbol "GAT-10_1_1"
 				(rectangle
 					(start -4.572 -1.778)
 					(end -3.302 1.27)
@@ -2380,7 +2362,7 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 2.54 180)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -2390,6 +2372,43 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5123,6 +5142,116 @@
 			(project "SI5351_broadband_comb_generatror"
 				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RF:GAT-10")
+		(at 247.65 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16827a29-0ade-4580-a62e-b85b758fb9a5")
+		(property "Reference" "U4"
+			(at 247.65 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GAT-10+"
+			(at 247.65 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Mini-Circuits_FG873-4_3x3mm"
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/GAT-10+.pdf"
+			(at 241.3 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8GHz RF Attenuator, 50ohm Matched Impedance, 10dB Attenuation, GAT-10"
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer PN" ""
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" ""
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor PN" ""
+			(at 247.65 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9c452059-31a0-48c6-ac49-52b4c922514b")
+		)
+		(pin "4"
+			(uuid "f854a16d-fa9a-444b-9bf8-822187aa45a2")
+		)
+		(pin "2"
+			(uuid "44b0f897-3517-488b-8c27-2e7a4c2de28b")
+		)
+		(pin "1"
+			(uuid "8e4d3cd8-8362-4bf6-a4e8-2b9ab5874827")
+		)
+		(instances
+			(project "SI5351_broadband_comb_generatror"
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -8020,109 +8149,6 @@
 			(project "SI5351_broadband_comb_generatror"
 				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
 					(reference "#PWR55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RF:PAT1220-C-3DB")
-		(at 247.65 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63786b92-6332-4019-ba4a-7682bc20a2d5")
-		(property "Reference" "U13"
-			(at 247.65 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAT1220-C-3DB"
-			(at 247.65 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Converter:RF_Attenuator_Susumu_PAT1220"
-			(at 247.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition16_en.pdf"
-			(at 241.3 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10GHz RF Attenuator, 50ohm Matched Impedance, 3dB Attenuation, PAT1220"
-			(at 247.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "Mouser"
-			(at 247.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Distributor PN" " 754-PAT1220C-3DBT5 "
-			(at 247.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Susumu "
-			(at 247.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer PN" "PAT1220-C-3DB-T5"
-			(at 247.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "80bbdb1f-3069-4d3d-820c-30400c9268df")
-		)
-		(pin "3"
-			(uuid "3832c89f-107a-497d-8cb1-dce1cc660ca2")
-		)
-		(pin "2"
-			(uuid "afa94254-a0e8-484b-bef7-b6e506364444")
-		)
-		(instances
-			(project "SI5351_broadband_comb_generatror"
-				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
-					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -12069,109 +12095,6 @@
 		)
 	)
 	(symbol
-		(lib_id "RF:PAT1220-C-3DB")
-		(at 247.65 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7331250-e12d-4c33-8130-a86632e24a83")
-		(property "Reference" "U7"
-			(at 247.65 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PAT1220-C-3DB"
-			(at 247.65 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Converter:RF_Attenuator_Susumu_PAT1220"
-			(at 247.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition16_en.pdf"
-			(at 241.3 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10GHz RF Attenuator, 50ohm Matched Impedance, 3dB Attenuation, PAT1220"
-			(at 247.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "Mouser"
-			(at 247.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Distributor PN" " 754-PAT1220C-3DBT5 "
-			(at 247.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Susumu "
-			(at 247.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer PN" "PAT1220-C-3DB-T5"
-			(at 247.65 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e06ff796-315e-4b79-b70d-80778dd894d8")
-		)
-		(pin "3"
-			(uuid "65b524bc-23c3-4a29-a4a3-1f15054f827d")
-		)
-		(pin "2"
-			(uuid "b119f110-f410-4355-a5b0-b5f373c49231")
-		)
-		(instances
-			(project ""
-				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
-					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 87.63 68.58 0)
 		(unit 1)
@@ -12466,6 +12389,116 @@
 			(project "SI5351_broadband_comb_generatror"
 				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
 					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RF:GAT-10")
+		(at 247.65 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdde4536-83d0-4cbd-ae46-4ce0afafad1a")
+		(property "Reference" "U3"
+			(at 247.65 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GAT-10+"
+			(at 247.65 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Mini-Circuits_FG873-4_3x3mm"
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/GAT-10+.pdf"
+			(at 241.3 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "8GHz RF Attenuator, 50ohm Matched Impedance, 10dB Attenuation, GAT-10"
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer PN" ""
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" ""
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor PN" ""
+			(at 247.65 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "20b937d5-7dc9-41c5-8c66-c90c137fdbd1")
+		)
+		(pin "4"
+			(uuid "74db4544-07da-4681-949e-f8a91bd50fe6")
+		)
+		(pin "2"
+			(uuid "37dcd2d5-4752-4a3f-89df-995f098fdd48")
+		)
+		(pin "1"
+			(uuid "43d3c988-f67b-431c-b41b-4046bbe859c3")
+		)
+		(instances
+			(project ""
+				(path "/e3ffa783-81af-49ae-8254-21eed35dbc9d/daa18232-54a7-4b4b-bed2-249a906eef53"
+					(reference "U3")
 					(unit 1)
 				)
 			)
