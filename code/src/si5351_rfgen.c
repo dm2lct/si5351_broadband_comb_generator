@@ -1,24 +1,18 @@
 /*****************************************************************/
-/*             RF generator with Si5153 and ATMega8              */
+/*             Comb generator with Si5153 and ATMega328PB        */
 /*  ************************************************************ */
-/*  Mikrocontroller:  ATMEL AVR ATmega8, 8 MHz                   */
+/*  Mikrocontroller:  ATMEL AVR ATmega328, 8 MHz                 */
 /*                                                               */
 /*  Compiler:         GCC (GNU AVR C-Compiler)                   */
-/*  Author:           Peter Rachow (DK7IH)                       */
-/*  Last Change:      2017-FEB-23                                */
+/*  Author:           Luzia Christiane Tesar                     */
+/*  Last Change:      2025-08-22                                */
 /*****************************************************************/
-//Important:
-//This is an absolute minimum software to generate a 10MHz signal with
-//an ATMega8 and the SI5351 chip. Only one CLK0 and CLK1 are used 
-//to supply rf to RX and TX module seperately. 
 
-//I have tested this software with my RIGOL 100Mhz scope. Up to this
-//frequency the Si5331 produced output.
-
-//The software is more for educational purposes but can be modfied 
-//to get more stuff out of the chip.
-//
-//73 de Peter (DK7IH)
+// This is a minimal Firmware for the SI5351 Comb Generator
+// Developed 2025 at the chair of elektromagnetic theory and 
+// compatibility at TU Dresden
+// The code snippet for the communication with the si5351 is a fork from DK7IH:
+// https://dk7ih.de/a-simple-software-to-control-the-si5351a-generator-chip/
 
 #define F_CPU 8000000UL
 #include <inttypes.h>
