@@ -49,6 +49,7 @@ unsigned char command_in[32];
 volatile unsigned char data_count;
 volatile unsigned char command_ready;
 
+volatile char cmd[32], value[32], unit[32];
 unsigned long t1, freq;
 
 /////////////////////
@@ -58,10 +59,15 @@ unsigned long t1, freq;
 
 //Set of Si5351A register addresses
 #define CLK_ENABLE_CONTROL       3
-#define PLLX_SRC				15
+#define PLLX_SRC		15
 #define CLK0_CONTROL            16 
 #define CLK1_CONTROL            17
 #define CLK2_CONTROL            18
+#define CLK3_CONTROL            19
+#define CLK4_CONTROL            20
+#define CLK5_CONTROL            21
+#define CLK6_CONTROL            22
+#define CLK7_CONTROL            23
 #define SYNTH_PLL_A             26
 #define SYNTH_PLL_B             34
 #define SYNTH_MS_0              42
@@ -116,7 +122,7 @@ void twi_stop(void)
 
 void twi_write(uint8_t u8data)
 {
-	TWDR0 = u8data;
+    TWDR0 = u8data;
     TWCR0 = (1<<TWINT)|(1<<TWEN);
     while ((TWCR0 & (1<<TWINT)) == 0);
 }
@@ -145,10 +151,15 @@ void si5351_start(void)
   // Init clock chip 
   si5351_write(XTAL_LOAD_CAP, 0xD2);      // Set crystal load capacitor to 10pF (default),  
                                           // for bits 5:0 see also AN619 p. 60 
-  si5351_write(CLK_ENABLE_CONTROL, 0x00); // Enable all outputs 
+  si5351_write(CLK_ENABLE_CONTROL, 0x7E); // Enable CLK0 and CLK7 
   si5351_write(CLK0_CONTROL, 0x0F);       // Set PLLA to CLK0, 8 mA output 
-  si5351_write(CLK1_CONTROL, 0x2F);       // Set PLLB to CLK1, 8 mA output 
-  si5351_write(CLK2_CONTROL, 0x2F);       // Set PLLB to CLK2, 8 mA output 
+  si5351_write(CLK1_CONTROL, 0x80);       // CLK1 output OFF 
+  si5351_write(CLK2_CONTROL, 0x80);       // CLK2 output OFF 
+  si5351_write(CLK3_CONTROL, 0x80);       // CLK3 output OFF 
+  si5351_write(CLK4_CONTROL, 0x80);       // CLK4 output OFF 
+  si5351_write(CLK5_CONTROL, 0x80);       // CLK5 output OFF 
+  si5351_write(CLK6_CONTROL, 0x80);       // CLK6 output OFF 
+  si5351_write(CLK7_CONTROL, 0x80);       // CLK7 output OFF
   si5351_write(PLL_RESET, 0xA0);          // Reset PLLA and PLLB 
  
   // Set VCOs of PLLA and PLLB to 900 MHz 
@@ -292,23 +303,55 @@ void copy_command ()
         memcpy(command_in, data_in, 32);
 
         // Now clear data_in, the USART can reuse it now
-        memset(data_in[0], 0, 32);
+        memset(data_in, 0, 32);
     }
+}
+
+void split_command(char str[]){
+	str[strlen(str)-1] = '\0';
+	strcpy(cmd, strtok(str , " "));
+    	strcpy(value, strtok(NULL, " "));
+    	strcpy(unit , strtok(NULL, " "));
 }
 
 void process_command()
 {
-	uart_puts("processing");
-	if (command_in =="*IDN?"){
-		uart_puts("TUD TETEMV Kammgenerator\r\n");
+	if (strcmp(cmd, "*IDN?")==0){
+		uart_puts("TUD TET_EMV Kammgenerator V1.0\n");
 	}
-	
+	if (strcmp(cmd, "FREQ?")==0){                	
+  		char f[32];
+  		uart_puts(ltoa(freq,f,10));
+		uart_puts(" Hz\n");
+        }
+	if (strcmp(cmd, "FREQ")==0){
+  		if (strcmp(unit, "Hz")==0){
+			freq=atol(value);	
+		}
+		if (strcmp(unit, "kHz")==0){
+			freq=atol(value)*1000;	
+		}
+		if (strcmp(unit, "MHz")==0){
+			freq=atol(value)*1000000;	
+		}
+		si5351_set_freq(SYNTH_MS_0, freq);
+	}
+	if (strcmp(cmd, "OUTP")==0){ 
+		if (strcmp(value, "OFF")==0){
+			si5351_write(CLK_ENABLE_CONTROL, 0xFF);  
+		}
+		if (strcmp(value, "ON")==0){
+			si5351_write(CLK_ENABLE_CONTROL, 0x7E); 
+		}			
+        }
+
+       
+
+
 }
-
-
 int main(void)
 {
-	freq=100000000;
+	freq=10000000;
 	uart_init();
 	sei();
 	PORTC = 0x30;//I²C-Bus lines: PC4=SDA, PC5=SCL 
@@ -318,15 +361,15 @@ int main(void)
 	si5351_start();
 	wait_ms(100);
 	si5351_set_freq(SYNTH_MS_0, freq);
-	char s[32];
-	uart_puts ("Hallo Welt" CR);
     while (1)
     {
 	if (command_ready == TRUE) {
         	// Here is where we will copy
-		copy_command();	
-		uart_puts(command_in);
+		//uart_puts(data_in);
+		copy_command();
+		//uart_puts(command_in);
 		// and parse the command.
+		split_command(command_in);
 		process_command();
         	command_ready = FALSE;
         }
