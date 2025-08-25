@@ -6505,7 +6505,7 @@
 		(uuid "2cb1d10c-9cff-4eb1-831d-83a8cf9bee71")
 	)
 	(label "RXD"
-		(at 124.46 68.58 180)
+		(at 124.46 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6515,7 +6515,7 @@
 		(uuid "3e3bbe72-b40d-4456-a06b-d9e528272694")
 	)
 	(label "TXD"
-		(at 124.46 66.04 180)
+		(at 124.46 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
