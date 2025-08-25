@@ -11,6 +11,7 @@
 // This is a minimal Firmware for the SI5351 Comb Generator
 // Developed 2025 at the chair of elektromagnetic theory and 
 // compatibility at TU Dresden
+// it enables basic interpretion of some SCPI-Style commands and a manual control of the generator using a rotary switch
 // The code snippet for the communication with the si5351 is a fork from DK7IH:
 // https://dk7ih.de/a-simple-software-to-control-the-si5351a-generator-chip/
 
@@ -42,6 +43,7 @@ unsigned char command_in[32];
 
 volatile unsigned char data_count;
 volatile unsigned char command_ready;
+volatile unsigned char remote;
 
 volatile char cmd[32], value[32], unit[32];
 unsigned long t1, freq;
@@ -311,14 +313,21 @@ void split_command(char str[]){
 void process_command()
 {
 	if (strcmp(cmd, "*IDN?")==0){
+		remote = TRUE;
 		uart_puts("TUD TET_EMV Kammgenerator V1.0\n");
 	}
-	if (strcmp(cmd, "FREQ?")==0){                	
+	else if (strcmp(cmd, "*RST")==0){
+		si5351_write(CLK_ENABLE_CONTROL, 0xFF);  
+		remote = FALSE;
+	}
+	else if (strcmp(cmd, "FREQ?")==0){                	
+		remote = TRUE;
   		char f[32];
   		uart_puts(ltoa(freq,f,10));
 		uart_puts(" Hz\n");
         }
-	if (strcmp(cmd, "FREQ")==0){
+	else if (strcmp(cmd, "FREQ")==0){
+		remote = TRUE;
   		if (strcmp(unit, "Hz")==0){
 			freq=atol(value);	
 		}
@@ -328,24 +337,40 @@ void process_command()
 		if (strcmp(unit, "MHz")==0){
 			freq=atol(value)*1000000;	
 		}
-		si5351_set_freq(SYNTH_MS_0, freq);
+		if (freq >= 1000000 && freq <= 150000000){
+			si5351_set_freq(SYNTH_MS_0, freq);
+		}
+		else {
+			uart_puts("-100\n");
+		}
 	}
-	if (strcmp(cmd, "OUTP")==0){ 
+	else if (strcmp(cmd, "OUTP")==0){ 
+		remote = TRUE;
 		if (strcmp(value, "OFF")==0){
 			si5351_write(CLK_ENABLE_CONTROL, 0xFF);  
 		}
-		if (strcmp(value, "ON")==0){
+		else if (strcmp(value, "ON")==0){
 			si5351_write(CLK_ENABLE_CONTROL, 0x7E); 
-		}			
-        }
+		}
+		else {
+			uart_puts("-100\n");
+		}
 
-       
+	}
+	else {
+		uart_puts("-100\n");
+	}
 
 
+        
 }
+
 int main(void)
 {
-	freq=10000000;
+	int SwitchPos=0;
+	int lastSwitchPos;	
+	DDRD |= (1<< DDD2);
+	DDRD  &= ~(1<<PD3)|~(1<<PD4)|~(1<<PD5)|~(1<<PD6)|~(1<<PD7);
 	uart_init();
 	sei();
 	PORTC = 0x30;//I²C-Bus lines: PC4=SDA, PC5=SCL 
@@ -354,19 +379,70 @@ int main(void)
 	wait_ms(100);
 	si5351_start();
 	wait_ms(100);
-	si5351_set_freq(SYNTH_MS_0, freq);
     while (1)
     {
 	if (command_ready == TRUE) {
-        	// Here is where we will copy
-		//uart_puts(data_in);
 		copy_command();
-		//uart_puts(command_in);
-		// and parse the command.
 		split_command(command_in);
 		process_command();
         	command_ready = FALSE;
         }
+	PORTD |= (1 << PD2);  //PB0 im PORTB setzen
+        wait_ms(100);
+	if(PIND & (1 << PD3)) {
+		//OFF/LOKAL
+		SwitchPos=0;
+	}
+	if(PIND & (1 << PD4)) {
+		//100k
+		SwitchPos=1;
+	}
+	if(PIND & (1 << PD5)) {
+		//1M
+		SwitchPos=2;
+	}
+	if(PIND & (1 << PD6)) {
+		//10M
+		SwitchPos=3;
+	}
+	if(PIND & (1 << PD7)) {
+		//100M
+		SwitchPos=4;
+	}
+	
+	wait_ms(100);
+	PORTD &= ~(1 << PD2); //PD2 im PORTD löschen
+	
+	if(SwitchPos!=lastSwitchPos){
+		switch(SwitchPos){
+			case 0:
+				remote=FALSE;
+				si5351_write(CLK_ENABLE_CONTROL, 0xFF);  // Output off
+			break;
+
+			case 1:
+				freq=1000000;
+			break;
+
+			case 2:
+				freq=10000000;
+			break;
+
+			case 3:
+				freq=50000000;
+			break;
+
+			case 4:
+				freq=100000000;
+			break;
+
+		}	
+		if(remote==FALSE && SwitchPos!=0){
+			si5351_write(CLK_ENABLE_CONTROL, 0x7E); 
+			si5351_set_freq(SYNTH_MS_0, freq);
+		}
+		lastSwitchPos=SwitchPos;
+	}
     }
 
     return 0;
